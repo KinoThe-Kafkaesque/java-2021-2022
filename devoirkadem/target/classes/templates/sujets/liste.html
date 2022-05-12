@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Les sujets</title>
+</head>
+
+<body>
+	<h1>Les sujets</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>num</th>
+				<th>libelle</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr th:each="p:${sujets}">
+				<th th:text="${p.num}">num</th>
+				<td th:text="${p.libelle}">libelle</td>
+			
+			</tr>
+		</tbody>
+		</table>
+</body>
+
+</html>
